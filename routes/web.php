@@ -1,5 +1,9 @@
 <?php
 
+if (App::environment('production')) {
+    URL::forceScheme('https');
+}
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AzurePriceController;
 use App\Http\Controllers\AwsPriceController;
