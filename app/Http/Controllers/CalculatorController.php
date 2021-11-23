@@ -32,8 +32,8 @@ class CalculatorController extends Controller
                 })
                 ->get();
             $count = 0;
-// dd($azure_product->price_perhourspot);
-            if(isset($azure_product->price_perhourspot)){
+
+            if(isset($azure_product)){
                 foreach($azure_product as $key){
                     // dd($key->price_perhourspot);
                     if(isset($key->price_perhourspot)){
